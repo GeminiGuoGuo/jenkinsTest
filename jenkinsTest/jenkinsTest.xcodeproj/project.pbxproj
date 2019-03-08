@@ -15,6 +15,7 @@
 		64C58F3121ACEBA100523D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C58F3021ACEBA100523D6C /* main.m */; };
 		64C58F3B21ACEBA100523D6C /* jenkinsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C58F3A21ACEBA100523D6C /* jenkinsTestTests.m */; };
 		64C58F4621ACEBA100523D6C /* jenkinsTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C58F4521ACEBA100523D6C /* jenkinsTestUITests.m */; };
+		64FACA7B22329885007DF5A3 /* QYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FACA7A22329885007DF5A3 /* QYViewController.m */; };
 		91C7B3A688E1F9B95407223D /* libPods-jenkinsTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0230428FE2E20E60FA62ED71 /* libPods-jenkinsTest.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		64C58F4121ACEBA100523D6C /* jenkinsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jenkinsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C58F4521ACEBA100523D6C /* jenkinsTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jenkinsTestUITests.m; sourceTree = "<group>"; };
 		64C58F4721ACEBA100523D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64FACA7922329885007DF5A3 /* QYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYViewController.h; sourceTree = "<group>"; };
+		64FACA7A22329885007DF5A3 /* QYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYViewController.m; sourceTree = "<group>"; };
 		8C53424838E8891A0407DE2B /* Pods-jenkinsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jenkinsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-jenkinsTest/Pods-jenkinsTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +124,8 @@
 				64C58F2221ACEBA100523D6C /* AppDelegate.m */,
 				64C58F2421ACEBA100523D6C /* ViewController.h */,
 				64C58F2521ACEBA100523D6C /* ViewController.m */,
+				64FACA7922329885007DF5A3 /* QYViewController.h */,
+				64FACA7A22329885007DF5A3 /* QYViewController.m */,
 				64C58F2721ACEBA100523D6C /* Main.storyboard */,
 				64C58F2A21ACEBA100523D6C /* Assets.xcassets */,
 				64C58F2C21ACEBA100523D6C /* LaunchScreen.storyboard */,
@@ -167,8 +172,6 @@
 				64C58F1A21ACEBA100523D6C /* Sources */,
 				64C58F1B21ACEBA100523D6C /* Frameworks */,
 				64C58F1C21ACEBA100523D6C /* Resources */,
-				8CCC39A921C0E04F9E87ED0D /* [CP] Embed Pods Frameworks */,
-				DCE1207F34831053AB648792 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,7 +229,7 @@
 				TargetAttributes = {
 					64C58F1D21ACEBA100523D6C = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					64C58F3521ACEBA100523D6C = {
 						CreatedOnToolsVersion = 9.0;
@@ -306,36 +309,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8CCC39A921C0E04F9E87ED0D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jenkinsTest/Pods-jenkinsTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DCE1207F34831053AB648792 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jenkinsTest/Pods-jenkinsTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -345,6 +318,7 @@
 			files = (
 				64C58F2621ACEBA100523D6C /* ViewController.m in Sources */,
 				64C58F3121ACEBA100523D6C /* main.m in Sources */,
+				64FACA7B22329885007DF5A3 /* QYViewController.m in Sources */,
 				64C58F2321ACEBA100523D6C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,11 +483,17 @@
 			baseConfigurationReference = 10769F20A6D0BF256F339206 /* Pods-jenkinsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LONCH GROUP";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LONCH GROUP";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TPXMNBN2HM;
 				INFOPLIST_FILE = jenkinsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lc.jenkinsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.CloudOffice.Trial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "398d822f-5c40-4cc4-bc94-ba847a021baa";
+				PROVISIONING_PROFILE_SPECIFIER = CouldOffice_Profile_InHouse_New;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -523,11 +503,17 @@
 			baseConfigurationReference = 8C53424838E8891A0407DE2B /* Pods-jenkinsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LONCH GROUP";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LONCH GROUP";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TPXMNBN2HM;
 				INFOPLIST_FILE = jenkinsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lc.jenkinsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.CloudOffice.Trial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "398d822f-5c40-4cc4-bc94-ba847a021baa";
+				PROVISIONING_PROFILE_SPECIFIER = CouldOffice_Profile_InHouse_New;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

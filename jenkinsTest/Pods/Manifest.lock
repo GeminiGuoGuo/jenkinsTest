@@ -18,9 +18,13 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
 
 PODFILE CHECKSUM: 7fba2b125e5166aa99decc6de0ef86c9517b206d
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0
